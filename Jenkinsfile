@@ -15,7 +15,7 @@ pipeline {
                 set -e
                 python3 -m venv venv
                 venv/bin/pip install -U pip
-                venv/bin/pip install myapp/requirements.txt
+                venv/bin/pip install -r myapp/requirements.txt
                 '''
             }
         }
